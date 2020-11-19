@@ -309,7 +309,7 @@ div.desc {
   flex-direction: column;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .body {
     flex: 100%;
     align-content: center;
@@ -317,27 +317,45 @@ div.desc {
   #progressbar {
     flex: 100%;
     align-content: center;
+    margin-left: 25%;
   }
   #msform > fieldset {
     align-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
-    margin: 0 7%;
+    width: 50px;
+    margin: 0;
   }
   .flex-container {
     display: flex;
     flex-direction: column;
   }
   .text > b > h1 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
+    width: 180%;
+    margin-left: 30px;
   }
   #progressbar li {
     width: 42px;
+    object-fit: contain;
   }
   .label {
     width: 50px;
     margin-left: -27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text > b > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  #msform > fieldset {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 2%;
   }
 }
